@@ -1,0 +1,21 @@
+{
+	"name": "TaxiRidersParquetDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "TaxiRiders2.parquet",
+				"folderPath": "Output",
+				"fileSystem": "taxidata"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
